@@ -1,0 +1,31 @@
+test_closest (__main__.TestExercice) ... ok
+test_coordinates (__main__.TestExercice) ... FAIL
+test_linear_values (__main__.TestExercice) ... ok
+
+======================================================================
+FAIL: test_coordinates (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 29, in test_coordinates
+    np.testing.assert_array_equal(
+  File "/home/runner/.local/lib/python3.8/site-packages/numpy/testing/_private/utils.py", line 932, in assert_array_equal
+    assert_array_compare(operator.__eq__, x, y, err_msg=err_msg,
+  File "/home/runner/.local/lib/python3.8/site-packages/numpy/testing/_private/utils.py", line 842, in assert_array_compare
+    raise AssertionError(msg)
+AssertionError: 
+Arrays are not equal
+Mauvaise réponse
+Mismatched elements: 1 / 6 (16.7%)
+Max absolute difference: 1.89254688
+Max relative difference: 4.08186486
+ x: array([[ 0.      ,  0.      ],
+       [14.142136,  0.785398],
+       [ 2.236068, -2.356194]])
+ y: array([[ 0.      ,  0.      ],
+       [14.142136,  0.785398],
+       [ 2.236068, -0.463648]])
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+FAILED (failures=1)
